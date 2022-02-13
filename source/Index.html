@@ -6,14 +6,225 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>HTML Academy: Путешествие по Европе</title>
   <link href="favicon.ico" rel="icon" type="image/x-icon">
-  <!-- <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
-  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
-  <link rel="preload" href="fonts/bloggersans-medium.woff" as="font">
-  <link rel="preload" href="fonts/bloggersans-bold.woff" as="font"> -->
+  <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="/fonts/Montserrat-Medium.woff2" as="font">
+  <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" as="font">
+  <link rel="preload" href="/fonts/Montserrat-Bold.woff" as="font">
+  <link rel="preload" href="/fonts/Montserrat-Medium.woff" as="font">
+  <link rel="preload" href="/fonts/Montserrat-Regular.woff" as="font">
+  <link rel="preload" href="/fonts/Montserrat-SemiBold.woff" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body>
+  <body class="page-body">
+    <header class="page-header page-header--no-js">
+      <div class="logo-wrapper">
+        <a class="logo" href="">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/icons/logo_desktop.svg">
+            <source media="(max-width: 1919px)" srcset="img/icons/logo_mobile.svg">
+            <img class="logo__image" src="img/icons/logo_mobile.svg" width="44" height="17"
+              alt="Туристическая компания Путешествия по Европе" />
+          </picture>
+        </a>
+        <nav class="nav">
+          <button class="nav__button nav__button--no-js" type="button"></button>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__list-text" href="#">О путешествии</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-text" href="#">Цены</span>
+            </li>
+          </ul>
+          <a class="nav__phone-link" href="tel:+749978468446">
+            <span class="nav__phone-link-text">+7 (499) -784-684-46</span>
+          </a>
+        </nav>
+      </div>
+    </header>
 
-</body>
+    <main class="page-main">
+      <section class="promo">
+        <h1 class="promo__title">Путешествие по Европе</h1>
+        <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете.
+          Вас ждет: море, горы, а также потрясающая красота природы.
+        </p>
+        <a class="promo__link" href="#">Смотреть тур</a>
+      </section>
+
+      <section class="places">
+        <h2 class="places__title">Места посещения</h2>
+        <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        <ul class="places__list">
+          <li class="places__list-item">
+            <a class="places__list-link">
+              <picture>
+                <source media="(min-width: 1920px)" srcset="img/greece_desktop.jpg, img/greece_desktop@2x.jpg 2x" width="350" heigh="430">
+                <img class="places__country-image" src="img/greece_mobile.jpg" srcset="img/greece_mobile@2x.jpg 2x" width="288" height="425"
+                  alt="Греция">
+              </picture>
+              <span class="places__list-link-title">Греция</span>
+            </a>
+          </li>
+          <li class="places__list-item">
+            <a class="places__list-link">
+              <picture>
+                <source media="(min-width: 1920px)" srcset="img/albania_desktop.jpg, img/albania_desktop@2x.jpg 2x" width="350" heigh="430">
+                <img class="places__country-image" src="img/albania_mobile.jpg" srcset="img/albania_mobile@2x.jpg 2x" width="288" height="425"
+                  alt="Греция">
+              </picture>
+              <span class="places__list-link-title">Албания</span>
+            </a>
+          </li>
+          <li class="places__list-item">
+            <a class="places__list-link">
+              <picture>
+                <source media="(min-width: 1920px)" srcset="img/macedonia_desktop.jpg, img/macedonia_desktop@2x.jpg 2x" width="350" heigh="430">
+                <img class="places__country-image" src="img/macedonia_mobile.jpg" srcset="img/macedonia_mobile@2x.jpg 2x" width="288" height="425"
+                  alt="Греция">
+              </picture>
+              <span class="places__list-link-title">Македония</span>
+            </a>
+          </li>
+          <li class="places__list-item">
+            <a class="places__list-link">
+              <picture>
+                <source media="(min-width: 1920px)" srcset="img/montenegro_desktop.jpg, img/montenegro_desktop@2x.jpg 2x" width="350" heigh="430">
+                <img class="places__country-image" src="img/montenegro_mobile.jpg" srcset="img/montenegro_mobile@2x.jpg 2x" width="288" height="425"
+                  alt="Греция">
+              </picture>
+              <span class="places__list-link-title">Черногория</span>
+            </a>
+          </li>
+          <li class="places__list-item">
+            <a class="places__list-link">
+              <picture>
+                <source media="(min-width: 1920px)" srcset="img/croatia_desktop.jpg, img/croatia_desktop@2x.jpg 2x" width="350" heigh="430">
+                <img class="places__country-image" src="img/croatia_mobile.jpg" srcset="img/croatia_mobile@2x.jpg 2x" width="288" height="425"
+                  alt="Греция">
+              </picture>
+              <span class="places__list-link-title">Хорватия</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="tab">
+        <article class="countries">
+          <ul class="countries__nav">
+            <li class="countries__nav-item">
+              <span class="countries__nav-text">Греция</span>
+            </li>
+            <li class="countries__nav-item">
+              <span class="countries__nav-text">Албания</span>
+            </li>
+            <li class="countries__nav-item">
+              <span class="countries__nav-text">Македония</span>
+            </li>
+            <li class="countries__nav-item">
+              <span class="countries__nav-text">Черногория</span>
+            </li>
+            <li class="countries__nav-item">
+              <span class="countries__nav-text">Хорватия</span>
+            </li>
+          </ul>
+          <div class="countries__item country">
+            <div class="country__wrapper">
+              <h2 class="country__title">Греция</h2>
+              <p class="country__text">На севере Греции находится один из крупнейших комплексов монастырей,
+                расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе».
+                Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника
+                и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота
+                природы и атмосфера, царящая в монастырях Метеоры.
+              </p>
+              <a class="country__link" href="#">Купить тур сейчас</a>
+            </div>
+            <div class="country__feedbacks feedbacks">
+              <p class="feedbacks__title">Отзывы</p>
+              <p class="feedbacks__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+                Ощущение такое, как будто стоишь на краю света!
+              </p>
+              <div class="feedbacks__user-wrapper">
+                <picture>
+                  <img class="user__photo" src="img/user_image.jpg" srcset="img/user_image@2x.jpg 2x" width="37" height="38"
+                  alt="Фото пользователя">
+                </picture>
+                <span class="user__name">Влада Голицина</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="page-footer__next-countries">
+        <h4 class="page-footer__title">Следующие путешествия</h4>
+        <ul class="page-footer__list">
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Марсель</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Ним</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Монпелье</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Барселона</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Пальма</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Сардиния</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Палермо</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Катания</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Неаполь</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Рим</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Корс</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Ницца</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Монако</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Динь-ле-Бен</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Гренобль</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__contacts">
+        <h4 class="page-footer__title">Наши контакты</h4>
+        <div class="page-footer__wrapper">
+          <a class="page-footer__contacts-link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a class="page-footer__contacts-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+      </section>
+      <section class="page-footer__corp-trip">
+        <h4 class="page-footer__title">Корпоративные путешествия</h4>
+        <p class="page-footer__text">Также вы можете заказать индивидуальное путешествие под вашу компанию.
+          Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух,
+          а также являются отличным времяпрепровождением
+        </p>
+      </section>
+    </footer>
+  </body>
 </html>
