@@ -1,0 +1,19 @@
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: $background-color;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 36px;
+    padding-right: 375px;
+    padding-bottom: 32px;
+    padding-left: 375px;
+  }
+}

@@ -29,13 +29,13 @@
           </picture>
         </a>
         <nav class="nav">
-          <button class="nav__button nav__button--no-js" type="button"></button>
+          <button class="nav__button " type="button"></button>
           <ul class="nav__list">
             <li class="nav__list-item">
-              <a class="nav__list-text" href="#">О путешествии</a>
+              <a class="nav__list-link" href="#places">О путешествии</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-text" href="#">Цены</span>
+              <a class="nav__list-link" href="#prices">Цены</span>
             </li>
           </ul>
           <a class="nav__phone-link" href="tel:+749978468446">
@@ -54,7 +54,7 @@
         <a class="promo__link" href="#">Смотреть тур</a>
       </section>
 
-      <section class="places">
+      <section class="places" id="places">
         <h2 class="places__title">Места посещения</h2>
         <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         <ul class="places__list">
@@ -111,8 +111,8 @@
         </ul>
       </section>
 
-      <section class="tab">
-        <article class="countries">
+      <section class="tabs">
+        <article class="tabs__countries countries">
           <ul class="countries__nav">
             <li class="countries__nav-item">
               <span class="countries__nav-text">Греция</span>
@@ -157,6 +157,69 @@
             </div>
           </div>
         </article>
+
+        <article class="tabs__prices prices" id="prices">
+          <div class="prices__wrapper">
+            <h2 class="prices__title">Цены</h2>
+            <p class="prices__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями,
+              отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска
+              и отдохните на все 100%!
+            </p>
+            <div class="prices__contacts">
+              <h4 class="prices__contacts-title">Свяжитесь с нами</h4>
+              <a class="prices__contacts-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+            </div>
+          </div>
+          <ul class="prices__rates">
+            <li class="prices__rates-item rate">
+              <h3 class="rate__title">Комплексный</h3>
+              <p class="rate__price">$1999</p>
+              <span class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</span>
+              <ul class="rate__feature-list">
+                <li class="rate__feature-list-item">Разработанный маршрут с гидом группы</li>
+                <li class="rate__feature-list-item">Перелет, трансфер и проживание в отелях</li>
+                <li class="rate__feature-list-item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="rate__feature-list-item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+            </li>
+            <li class="prices__rates-item rate">
+              <h3 class="rate__title">Экономный</h3>
+              <p class="rate__price">$1399</p>
+              <span class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</span>
+              <ul class="rate__feature-list">
+                <li class="rate__feature-list-item">Разработанный маршрут с гидом группы</li>
+                <li class="rate__feature-list-item">Перелет и трансфер</li>
+                <li class="rate__feature-list-item">Проживание в хостелах при отелях</li>
+                <li class="rate__feature-list-item">Только завтраки в отелях</li>
+                <li class="rate__feature-list-item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="popup">
+        <button class="popup__close" type="button"></button>
+        <h3 class="popup__title">Купить тур</h3>
+        <form class="popup__form form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="form-phone"></label>
+          <input class="form__input" type="text" id="form-phone" name="form-phone" placeholder="+7 Введие 10 цифр номера" required>
+          <label class="visually-hidden" for="form-email"></label>
+          <input class="form__input" type="text" id="form-email" name="form-email" placeholder="E-mail">
+          <button class="form__submit" type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <section class="questions">
+        <h3 class="questions__title">У Вас остались вопросы?</h3>
+        <span class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</span>
+        <form class="questions__form form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="form-phone"></label>
+          <input class="form__input" type="text" id="form-phone" name="form-phone" placeholder="+7 Введие 10 цифр номера" required>
+          <label class="visually-hidden" for="form-email"></label>
+          <input class="form__input" type="text" id="form-email" name="form-email" placeholder="E-mail">
+          <button class="form__submit" type="submit">Отправить</button>
+        </form>
       </section>
     </main>
 
@@ -226,5 +289,6 @@
         </p>
       </section>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
