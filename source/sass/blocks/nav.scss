@@ -3,6 +3,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    align-items: center;
   }
 }
 .nav__button {
@@ -34,12 +35,12 @@
   }
 
   &:hover {
-    background-color: $basic-accent-color;
+    background-color: $accent-color-hover;
     cursor: pointer;
   }
 
-  &--open {
-    background-color: $background-color;
+  &--opened {
+    background-color: $basic-white;
     background-image: url("../../img/icons/icon_nav-button_close.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -50,8 +51,8 @@
     }
   }
 
-  &--open:hover {
-    background-color: $background-color;
+  &--opened:hover {
+    background-color: $basic-white;
   }
 
   @media (min-width: $tablet-width) {
@@ -61,7 +62,7 @@
       left: 25px;
     }
 
-    &--open {
+    &--opened {
       width: 50px;
     }
   }
@@ -74,7 +75,7 @@
 .nav__list {
   display: none;
 
-  &--open {
+  &--opened {
     position: absolute;
     top: 0;
     right: 0;
@@ -87,12 +88,13 @@
     padding-bottom: 284px;
     padding-left: 0;
 
-    background-color: $background-color;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     margin: 0;
+    margin-right: 70px;
     padding-left: 0;
   }
 }
@@ -140,9 +142,10 @@
   @media (min-width: $desktop-width) {
     padding: 0;
 
-    background-color: $background-color;
+    background-color: $basic-white;
 
     &:first-child {
+      margin-right: 40px;
       margin-bottom: 0;
     }
 
@@ -153,17 +156,11 @@
 }
 
 .nav__list-link {
-  font-family: "Montserrat Semibold";
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 600;
+  @include font-group-semibold($size-20, $line-28);
   color: $dark-text-color;
 
   @media (min-width: $desktop-width) {
-    font-family: "Montserrat Medium";
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
+    @include font-group-medium($size-14, $line-17);
   }
 }
 
@@ -176,5 +173,21 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+
+    color: $ultra-dark-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: $basic-accent-color;
+    }
+  }
+}
+
+.nav__phone-link-text {
+  @include font-group($size-18, $line-32);
+  color: $ultra-dark-color;
+
+  &:hover {
+    color: $basic-accent-color;
   }
 }

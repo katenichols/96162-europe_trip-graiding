@@ -29,3 +29,40 @@
   font-display: swap;
   src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff");
 }
+
+@mixin font-group($size, $height) {
+  font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-weight: 400;
+}
+
+@mixin font-group-medium($size, $height) {
+  font-family: "Montserrat Medium", "Trebuchet MS", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-weight: 500;
+}
+
+@mixin font-group-semibold($size, $height) {
+  font-family: "Montserrat Semibold", "Trebuchet MS", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-weight: 600;
+}
+
+@mixin font-group-bold($size, $height) {
+  font-family: "Montserrat Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-weight: 700;
+}
+
+@mixin font-group-small ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
