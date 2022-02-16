@@ -1,0 +1,128 @@
+.card {
+  display: block;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.card--first,
+.card--third {
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
+}
+
+.card--first,
+.card--second {
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+  }
+}
+
+.card--third {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.card--forth {
+  @media (min-width: $desktop-width) {
+    margin-right: 120px;
+  }
+}
+
+.card__link {
+  position: relative;
+
+  display: block;
+  height: 425px;
+
+  @media (min-width: $desktop-width) {
+    height: 430px;
+  }
+}
+
+.card__link:hover {
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 500;
+
+    display: block;
+    width: 288px;
+    height: 425px;
+
+    background-color: $link-color-fade;
+  }
+
+  &::after {
+    content: "Смотреть подробнее";
+    position: absolute;
+    top: 177px;
+    left: 11px;
+    z-index: 600;
+
+    display: block;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+
+    @include font-group-medium($size-14, $line-17);
+    color: $basic-white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    border: 1px solid $border-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 350px;
+      height: 430px;
+    }
+
+    &::after {
+      left: 42px;
+    }
+  }
+}
+
+.card__image {
+  width: 288px;
+  height: 425px;
+
+  @media(min-width: $desktop-width) {
+    width: 350px;
+    height: 430px;
+  }
+}
+
+.card__link-title {
+  position: absolute;
+  bottom: 0;
+  left: 36px;
+
+  display: block;
+  width: 215px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+
+  @include font-group-medium($size-24, $line-29);
+  letter-spacing: -0.41px;
+  color: $dark-color;
+
+  background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    bottom: -1px;
+    left: 68px;
+  }
+}
