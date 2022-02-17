@@ -3,12 +3,23 @@
   margin-left: 16px;
 
   @media(min-width: $tablet-width) {
-    margin-right: 76px;
-    margin-left: 76px;
+    margin-right: 21px;
+    margin-left: 21px;
   }
 
   @media(min-width: $desktop-width) {
     margin-right: 375px;
     margin-left: 375px;
+  }
+
+  &--country {
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      margin-right: 375px;
+      margin-bottom: 233px;
+      margin-left: 375px;
+    }
   }
 }

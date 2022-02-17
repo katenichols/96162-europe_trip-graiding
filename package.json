@@ -51,5 +51,8 @@
   "version": "1.0.0",
   "main": "gulpfile.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^8.0.6"
+  }
 }

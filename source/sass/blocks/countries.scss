@@ -1,14 +1,39 @@
 .countries__nav {
+  position: relative;
+
   display: flex;
+  flex-wrap: nowrap;
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 24px;
   padding-left: 0;
   overflow: hidden;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .countries__nav-item {
-  margin-right: 99px;
+  display: block;
+  padding-right: 99px;
+  padding-bottom: 15px;
 
+  border-bottom: 1px solid $dark-color-ultra-fade;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+.countries__nav-text {
   @include font-group-medium($size-20, $line-24);
   color: $dark-color-ultra-fade;
+
+  &--active {
+    color: $basic-accent-color;
+  }
 }
