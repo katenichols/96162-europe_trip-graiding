@@ -6,14 +6,48 @@ const popup = document.querySelector(".popup");
 const popupClose = document.querySelector(".popup__close");
 const questionsClose = document.querySelector(".questions__close");
 const rateFeatureLinks = document.querySelectorAll(".rate__feature-link");
-const formSubmits = document.querySelectorAll(".form__submit");
+// const formSubmits = document.querySelectorAll(".form__submit");
+const formSubmit = popup.querySelector(".form__submit");
 const questionsFeedback = document.querySelector(".questions__feedback");
-
 
 const openModal = () => {
   popup.classList.add("popup--open");
   popupClose.classList.remove("popup__close--no-js");
 };
+
+const closeModal = () => {
+  popupClose.classList.add("popup__close--no-js");
+  popup.classList.remove("popup--open");
+  questionsClose.classList.add("popup__close--no-js");
+  questionsFeedback.classList.remove("questions__feedback--open");
+}
+
+const escKey = (evt) => {
+  if ((evt.key === 'Escape' ||
+    evt.key === 'Esc')) {
+    return true;
+  }
+};
+
+const onEscKeydown = (evt) => {
+  if(escKey(evt)) {
+    closeModal();
+  }
+};
+
+document.addEventListener('keydown', onEscKeydown);
+
+if (popup.classList.contains("popup--open") ||
+    questionsFeedback.classList.contains("questions__feedback--open")) {
+      window.addEventListener("click", (evt) => {
+        if (!evt.target.classList.contains("popup") &&
+            !evt.target.classList.contains("questions__feedback")) {
+             closeModal();
+           }
+      });
+}
+
+
 
 navButton.addEventListener("click", () => {
   if (navButton.classList.contains("nav__button--opened")) {
@@ -33,13 +67,11 @@ for (let i=0; i < navListItems.length; i++) {
 }
 
 popupClose.addEventListener("click", () => {
-  popupClose.classList.add("popup__close--no-js");
-  popup.classList.remove("popup--open");
+  closeModal();
 });
 
 questionsClose.addEventListener("click", () => {
-  questionsClose.classList.add("popup__close--no-js");
-  questionsFeedback.classList.remove("questions__feedback--open");
+  closeModal();
 });
 
 for (let i=0; i < countryLinks.length; i++) {
@@ -54,8 +86,16 @@ for (let i=0; i < rateFeatureLinks.length; i++) {
   });
 }
 
-for (let i=0; i < formSubmits.length; i++) {
-  formSubmits[i].addEventListener("click", (evt) => {
-    evt.preventDefault;
-  });
-}
+// for (let i=0; i < formSubmits.length; i++) {
+//   formSubmits[i].addEventListener("submit", (evt) => {
+//     evt.preventDefault();
+//     closeModal();
+//   });
+// }
+
+formSubmit.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  closeModal();
+});
+
+
