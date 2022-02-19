@@ -162,7 +162,7 @@
                       </p>
                       <div class="feedbacks__user-wrapper">
                         <picture>
-                          <img class="feedbacks__user-photo" src="img/user_image.jpg" srcset="img/user_image@2x.jpg 2x" width="37" height="38"
+                          <img class="feedbacks__user-photo" src="img/user_image1.jpg" srcset="img/user_image1@2x.jpg 2x" width="37" height="38"
                           alt="Фото пользователя">
                         </picture>
                         <span class="feedbacks__user-name">Влада Голицина</span>
@@ -296,7 +296,7 @@
         </article>
 
         <article class="tabs__prices prices" id="prices">
-          <div class="container">
+          <div class="container container--prices">
             <div class="prices__wrapper">
               <h2 class="prices__title">Цены</h2>
               <p class="prices__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями,
@@ -310,8 +310,10 @@
             </div>
             <ul class="prices__rates">
               <li class="prices__rates-item rate">
-                <h3 class="rate__title">Комплексный</h3>
-                <p class="rate__price">$1999</p>
+                <div class="rate__wrapper">
+                  <h3 class="rate__title">Комплексный</h3>
+                  <p class="rate__price">$1999</p>
+                </div>
                 <span class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</span>
                 <ul class="rate__feature-list">
                   <li class="rate__feature-list-item">Разработанный маршрут с гидом группы</li>
@@ -319,10 +321,13 @@
                   <li class="rate__feature-list-item">Завтраки, ужины в отелях и ланчи на природе</li>
                   <li class="rate__feature-list-item">Экскурсии по удивительно красивым местам Европы</li>
                 </ul>
+                <a class="rate__feature-link" href="#">Купить тур сейчас</a>
               </li>
               <li class="prices__rates-item rate">
-                <h3 class="rate__title">Экономный</h3>
-                <p class="rate__price">$1399</p>
+                <div class="rate__wrapper">
+                  <h3 class="rate__title">Экономный</h3>
+                  <p class="rate__price">$1399</p>
+                </div>
                 <span class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</span>
                 <ul class="rate__feature-list">
                   <li class="rate__feature-list-item">Разработанный маршрут с гидом группы</li>
@@ -331,6 +336,7 @@
                   <li class="rate__feature-list-item">Только завтраки в отелях</li>
                   <li class="rate__feature-list-item">Экскурсии по удивительно красивым местам Европы</li>
                 </ul>
+                <a class="rate__feature-link" href="#">Купить тур сейчас</a>
               </li>
             </ul>
           </div>
@@ -338,91 +344,107 @@
       </section>
 
       <section class="popup">
-        <button class="popup__close" type="button"></button>
-        <h3 class="popup__title">Купить тур</h3>
-        <form class="popup__form form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="form-phone-modal"></label>
-          <input class="form__input" type="text" id="form-phone-modal" name="form-phone-modal" placeholder="+7 Введие 10 цифр номера" required>
-          <label class="visually-hidden" for="form-email-modal"></label>
-          <input class="form__input" type="text" id="form-email-modal" name="form-email-modal" placeholder="E-mail">
-          <button class="form__submit" type="submit">Отправить</button>
-        </form>
+        <div class="popup__wrapper">
+          <button class="popup__close popup__close--no-js" type="button"></button>
+          <h3 class="popup__title">Купить тур</h3>
+          <form class="popup__form form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="form-phone-modal"></label>
+            <input class="form__input form__input--phone" type="text" id="form-phone-modal" name="form-phone-modal" placeholder="+7 Введите 10 цифр номера" required>
+            <label class="visually-hidden" for="form-email-modal"></label>
+            <input class="form__input form__input--email" type="text" id="form-email-modal" name="form-email-modal" placeholder="E-mail">
+            <button class="form__submit" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
 
-      <section class="questions">
-        <h3 class="questions__title">У Вас остались вопросы?</h3>
-        <span class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</span>
-        <form class="questions__form form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="form-phone"></label>
-          <input class="form__input" type="text" id="form-phone" name="form-phone" placeholder="+7 Введие 10 цифр номера" required>
-          <label class="visually-hidden" for="form-email"></label>
-          <input class="form__input" type="text" id="form-email" name="form-email" placeholder="E-mail">
-          <button class="form__submit" type="submit">Отправить</button>
-        </form>
-      </section>
+      <div class="container container--questions">
+        <section class="questions">
+          <div class="questions__wrapper">
+            <h3 class="questions__title">У Вас остались вопросы?</h3>
+            <span class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</span>
+            <form class="questions__form form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="form-phone"></label>
+              <input class="form__input form__input--phone form__input--questions" type="text" id="form-phone" name="form-phone" placeholder="+7 Введите 10 цифр номера" required>
+              <label class="visually-hidden" for="form-email"></label>
+              <input class="form__input form__input--email form__input--questions" type="text" id="form-email" name="form-email" placeholder="E-mail">
+              <button class="form__submit form__submit--questions" type="submit">Отправить</button>
+            </form>
+          </div>
+          <div class="questions__feedback">
+            <button class="questions__close popup__close" type="button"></button>
+            <span class="questions__feedback-text">Форма успешно отправлена, спасибо! :)</span>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container container--footer">
         <section class="page-footer__next-countries">
-          <h4 class="page-footer__title">Следующие путешествия</h4>
-          <ul class="page-footer__list">
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Марсель</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Ним</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Монпелье</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Барселона</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Пальма</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Сардиния</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Палермо</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Катания</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Неаполь</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Рим</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Корс</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Ницца</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Монако</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Динь-ле-Бен</a>
-            </li>
-            <li class="page-footer__list-item">
-              <a class="page-footer__list-link" href="#">Гренобль</a>
-            </li>
-          </ul>
+          <h4 class="page-footer__title page-footer__title--countries">Следующие путешествия</h4>
+          <div class="page-footer__wrapper-countries">
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Марсель</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Ним</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Монпелье</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Барселона</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Пальма</a>
+              </li>
+            </ul>
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Сардиния</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Палермо</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Катания</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Неаполь</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Рим</a>
+              </li>
+            </ul>
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Корс</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Ницца</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Монако</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html">Динь-ле-Бен</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html" target="#blank">Гренобль</a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="page-footer__contacts">
-          <h4 class="page-footer__title">Наши контакты</h4>
-          <div class="page-footer__wrapper">
+          <h4 class="page-footer__title page-footer__title--contacts">Наши контакты</h4>
+          <div class="page-footer__wrapper-contacts">
             <a class="page-footer__contacts-link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
             <a class="page-footer__contacts-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
           </div>
         </section>
         <section class="page-footer__corp-trip">
-          <h4 class="page-footer__title">Корпоративные путешествия</h4>
+          <h4 class="page-footer__title page-footer__title--corp">Корпоративные путешествия</h4>
           <p class="page-footer__text">Также вы можете заказать индивидуальное путешествие под вашу компанию.
             Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух,
             а также являются отличным времяпрепровождением

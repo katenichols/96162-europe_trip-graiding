@@ -1,0 +1,141 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 160px;
+    padding-bottom: 74px;
+  }
+}
+
+.page-footer__next-countries {
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid $footer-border-color;
+
+  @media (min-width: $tablet-width) {
+    width: 395px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 387px;
+    padding-bottom: 0;
+
+    border-right: 1px solid $footer-border-color;
+    border-bottom: none;
+  }
+}
+
+.page-footer__contacts {
+  padding-top: 30px;
+  padding-bottom: 29px;
+
+  border-bottom: 1px solid $footer-border-color;
+
+  @media (min-width: $tablet-width) {
+    width: 331px;
+    padding-top: 0;
+    padding-right: 23px;
+    padding-bottom: 0;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 397px;
+    padding-right: 65px;
+    padding-left: 65px;
+
+    border-right: 1px solid $footer-border-color;
+    border-bottom: none;
+  }
+}
+
+.page-footer__corp-trip {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-top: 0;
+    padding-right: 11px;
+    padding-bottom: 0;
+    padding-left: 55px;
+  }
+}
+
+.page-footer__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @include font-group-semibold($size-18, $line-32);
+  color: $ultra-dark-color;
+
+  &--contacts {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--countries {
+      border-right: 1px solid $footer-border-color;
+    }
+
+    &--countries,
+    &--contacts {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+
+    &--countries {
+      border-right: none;
+    }
+  }
+}
+
+.page-footer__wrapper-countries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    justify-content: left;
+  }
+}
+
+.page-footer__list {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  &:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    text-align: left;
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-footer__list-link {
+  @include font-group($size-14, $line-17);
+  color: $ultra-dark-color-halffade;
+}

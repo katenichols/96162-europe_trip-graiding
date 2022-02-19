@@ -1,0 +1,55 @@
+.form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+
+  background-color: $basic-white;
+  border: 1px solid $dark-color-ultra-fade;
+
+  &--phone {
+    padding-left: 26px;
+  }
+
+  &--invalid {
+    border-color: $basic-accent-color;
+  }
+}
+
+.form__input,
+.form__input::placeholder {
+  @include font-group($size-14, $line-17);
+  color: $ultra-dark-color;
+}
+
+.form__submit {
+  display: block;
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-align: center;
+
+  @include font-group-medium($size-10, $line-12);
+  color: $basic-white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  background-color: $basic-accent-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 18px;
+    padding-bottom: 17px;
+
+    @include font-group-bold($size-12, $line-15);
+  }
+}

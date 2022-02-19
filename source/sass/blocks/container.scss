@@ -23,3 +23,33 @@
     }
   }
 }
+
+.container--prices {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.container--questions {
+  margin: 0;
+
+  @media(min-width: $desktop-width) {
+    margin-right: 375px;
+    margin-left: 375px;
+  }
+}
+
+.container--footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
