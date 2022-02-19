@@ -1,7 +1,7 @@
 .prices__wrapper {
   @media (min-width: $desktop-width) {
     width: 400px;
-    padding-top: 117px;
+    padding-top: 111px;
     padding-left: 94px;
   }
 }
@@ -21,7 +21,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
 
-    margin-bottom: 53px;
+    margin-bottom: 49px;
     text-align: left;
 
     @include font-group-small($size-55, $line-90);
@@ -29,7 +29,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -20px;
+      bottom: -17px;
       left: 0;
 
       display: block;
@@ -43,14 +43,14 @@
 
 .prices__text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-align: center;
 
   @include font-group-small($size-16, $line-27);
   color: $dark-color-fade;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +79,7 @@
   color: $ultra-dark-color;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 
     font-size: 22px;
   }

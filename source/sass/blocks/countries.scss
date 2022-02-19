@@ -9,7 +9,7 @@
   overflow: hidden;
 
   @media(min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   @media(min-width: $desktop-width) {
@@ -20,12 +20,22 @@
 .countries__nav-item {
   display: block;
   padding-right: 99px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
 
   border-bottom: 1px solid $dark-color-ultra-fade;
 
   &:last-of-type {
     padding-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

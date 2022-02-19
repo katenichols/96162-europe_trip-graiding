@@ -5,6 +5,7 @@
 
   background-image: url("../../img/promo-background_mobile.webp");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   background-position: top;
   background-color: $promo-background;
 
@@ -14,7 +15,7 @@
 
   @media(min-width: $tablet-width) {
     padding-top: 60px;
-    padding-bottom: 81px;
+    padding-bottom: 83px;
 
     background-image: url("../../img/promo-background_tablet.webp");
     background-size: cover;
@@ -51,7 +52,7 @@
 
   @media(min-width: $tablet-width) {
     width: 398px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 
     @include font-group-small($size-30, $line-45);
   }
@@ -63,6 +64,7 @@
     text-align: left;
 
     @include font-group-small($size-55, $line-80);
+    letter-spacing: -1.11px;
   }
 }
 
@@ -93,16 +95,16 @@
 
   @media(min-width: $tablet-width) {
     width: 398px;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 
-    line-height: 26px;
+    line-height: 27px;
     color: $basic-white;
     letter-spacing: -0.47px;
   }
 
   @media(min-width: $desktop-width) {
     width: 376px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
     margin-left: 0;
     text-align: left;
   }
@@ -150,7 +152,7 @@
     width: 340px;
     margin-left: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
 
     @include font-group-bold($size-12, $line-15);
 

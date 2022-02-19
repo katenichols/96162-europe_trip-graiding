@@ -3,7 +3,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,6 +120,11 @@
   color: $dark-color;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
 
   @media (min-width: $desktop-width) {
     bottom: -1px;

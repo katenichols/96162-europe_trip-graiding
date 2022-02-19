@@ -1,9 +1,82 @@
 .catalog {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 70px;
 
   background-color: $popup-background-color;
+
+
+  @media (min-width: $tablet-width) {
+    padding-top: 150px;
+  }
+}
+
+.catalog__logo {
+  display: block;
+  width: 57px;
+  height: 22px;
+  margin-right:  auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 130px;
+  }
+}
+
+.catalog__message {
+  display: block;
+  width: 250px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  text-align: center;
+
+  @include font-group-semibold($size-18, $line-32);
+  color: $ultra-dark-color-halffade;
+
+  @media (min-width: $tablet-width) {
+    width: 650px;
+    margin-bottom: 70px;
+
+    @include font-group-small($size-30, $line-45);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+    margin-bottom: 100px;
+  }
+}
+
+.catalog__link {
+  display: block;
+  width: 288px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-align: center;
+
+  @include font-group-medium($size-10, $line-12);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $basic-white;
+
+  background-color: $basic-accent-color;
+
+  &:hover,
+  &:active {
+    background-color: $accent-color-hover;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include font-group-bold($size-12, $line-15);
+  }
 }

@@ -4,17 +4,27 @@
   display: block;
   width: 44px;
   height: 17px;
-  padding-top: 19px;
+  padding-top: 16px;
   padding-bottom: 15px;
   padding-left: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 16px;
     padding-left: 21px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 57px;
+    height: 22px;
     padding: 0;
+    padding-top: 3px;
+  }
+}
+
+.logo__image {
+  @media (min-width: $desktop-width) {
+    width: 57px;
+    height: 22px;
   }
 }

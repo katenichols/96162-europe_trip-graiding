@@ -4,10 +4,11 @@
   display: block;
   width: 288px;
   min-height: 629px;
+  margin-right: auto;
   margin-bottom: 30px;
-  padding-top: 30px;
+  margin-left: auto;
+  padding-top: 35px;
   padding-right: 20px;
-  padding-bottom: 80px;
   padding-left: 20px;
 
   border: 1px solid $dark-color-ultra-fade;
@@ -19,7 +20,7 @@
   }
 
   &:hover {
-    padding-top: 28px;
+    padding-top: 33px;
     padding-right: 18px;
     padding-left: 18px;
 
@@ -27,14 +28,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-right: 0;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 370px;
     padding-top: 40px;
     padding-right: 30px;
-    padding-bottom: 135px;
+    padding-bottom: 134px;
     padding-left: 30px;
 
     border-bottom-left-radius: 6px;
@@ -60,7 +63,7 @@
 
 .rate__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   text-align: center;
 
   @include font-group-semibold($size-24, $line-24);
@@ -71,6 +74,7 @@
     text-align: left;
 
     font-size: 28px;
+    letter-spacing: -1.27px;
   }
 }
 
@@ -80,7 +84,7 @@
 
 .rate__price {
   margin-top: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   text-align: center;
 
   @include font-group-bold($size-25, $line-34);
@@ -98,7 +102,7 @@
 
 .rate__text {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   text-align: center;
 
   @include font-group-small($size-16, $line-24);
@@ -111,8 +115,8 @@
 }
 
 .rate__feature-list {
-  padding-top: 20px;
-  padding-left: 30px;
+  padding-top: 21px;
+  padding-left: 29px;
 
   border-top: 1px solid $dark-color-ultra-fade;
 
@@ -133,6 +137,10 @@
   @include font-group-small($size-16, $line-32);
   color: $dark-color;
 
+  &--first {
+    margin-bottom: 5px;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -140,8 +148,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 9px;
-    left: -28px;
+    top: 10px;
+    left: -29px;
 
     display: block;
     width: 14px;
@@ -154,6 +162,10 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 15px;
+
+    &--first {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -170,8 +182,8 @@
 
   display: block;
   width: 288px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 22px;
+  padding-bottom: 16px;
   text-align: center;
 
   @include font-group-medium($size-10, $line-12);
@@ -181,9 +193,17 @@
 
   background-color: $basic-accent-color;
 
+  &:hover {
+    background-color: $accent-color-hover;
+  }
+
   @media (min-width: $desktop-width) {
     bottom: 30px;
     left: calc(50% - 155px);
+
+    width: 310px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     @include font-group-small($size-12, $line-15);
   }

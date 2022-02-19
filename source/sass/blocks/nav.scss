@@ -94,7 +94,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     margin: 0;
-    margin-right: 70px;
+    margin-right: 111px;
     padding-left: 0;
   }
 }
@@ -170,13 +170,34 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     display: flex;
+    padding-right: 3px;
 
     color: $ultra-dark-color;
     text-decoration: underline;
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -40px;
+
+      display: block;
+      width: 30px;
+      height: 30px;
+
+      background-image: url("../../img/icons/icon_phone.svg");
+      background-repeat: no-repeat;
+    }
+
     &:hover {
       color: $basic-accent-color;
+
+      &::after {
+        background-image: url("../../img/icons/icon_phone-hover.svg");
+      }
     }
   }
 }

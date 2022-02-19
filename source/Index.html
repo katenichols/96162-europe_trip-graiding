@@ -52,7 +52,7 @@
           <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете.
             Вас ждет: море, горы, а также потрясающая красота природы.
           </p>
-          <a class="promo__link" href="#">Смотреть тур</a>
+          <a class="promo__link" href="#tabs">Смотреть тур</a>
         </div>
       </section>
 
@@ -62,7 +62,7 @@
           <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <ul class="places__list">
             <li class="places__list-item card card--first">
-              <a class="card__link" href="#">
+              <a class="card__link" href="#tab1">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="img/greece_desktop.jpg, img/greece_desktop@2x.jpg 2x">
                   <img class="card__image" src="img/greece_mobile.jpg" srcset="img/greece_mobile@2x.jpg 2x" width="288" height="425"
@@ -72,7 +72,7 @@
               </a>
             </li>
             <li class="places__list-item card card--second">
-              <a class="card__link" href="#">
+              <a class="card__link" href="#tab2">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="img/albania_desktop.jpg, img/albania_desktop@2x.jpg 2x">
                   <img class="card__image" src="img/albania_mobile.jpg" srcset="img/albania_mobile@2x.jpg 2x" width="288" height="425"
@@ -82,7 +82,7 @@
               </a>
             </li>
             <li class="places__list-item card card--third">
-              <a class="card__link" href="#">
+              <a class="card__link" href="#tab3">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="img/macedonia_desktop.jpg, img/macedonia_desktop@2x.jpg 2x">
                   <img class="card__image" src="img/macedonia_mobile.jpg" srcset="img/macedonia_mobile@2x.jpg 2x" width="288" height="425"
@@ -92,7 +92,7 @@
               </a>
             </li>
             <li class="places__list-item card card--forth">
-              <a class="card__link" href="#">
+              <a class="card__link" href="#tab4">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="img/montenegro_desktop.jpg, img/montenegro_desktop@2x.jpg 2x">
                   <img class="card__image" src="img/montenegro_mobile.jpg" srcset="img/montenegro_mobile@2x.jpg 2x" width="288" height="425"
@@ -102,7 +102,7 @@
               </a>
             </li>
             <li class="places__list-item card">
-              <a class="card__link" href="#">
+              <a class="card__link" href="#tab5">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="img/croatia_desktop.jpg, img/croatia_desktop@2x.jpg 2x">
                   <img class="card__image" src="img/croatia_mobile.jpg" srcset="img/croatia_mobile@2x.jpg 2x" width="288" height="425"
@@ -115,24 +115,24 @@
         </div>
       </section>
 
-      <section class="tabs">
+      <section class="tabs" id="tabs">
         <h2 class="visually-hidden">Выбор страны</h2>
         <article class="tabs__countries countries">
           <div class="container">
             <ul class="countries__nav">
-              <li class="countries__nav-item">
+              <li class="countries__nav-item" id="tab1">
                 <span class="countries__nav-text countries__nav-text--active">Греция</span>
               </li>
-              <li class="countries__nav-item">
+              <li class="countries__nav-item" id="tab2">
                 <span class="countries__nav-text">Албания</span>
               </li>
-              <li class="countries__nav-item">
+              <li class="countries__nav-item" id="tab3">
                 <span class="countries__nav-text">Македония</span>
               </li>
-              <li class="countries__nav-item">
+              <li class="countries__nav-item" id="tab4">
                 <span class="countries__nav-text">Черногория</span>
               </li>
-              <li class="countries__nav-item">
+              <li class="countries__nav-item" id="tab5">
                 <span class="countries__nav-text">Хорватия</span>
               </li>
             </ul>
@@ -150,7 +150,7 @@
                       и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота
                       природы и атмосфера, царящая в монастырях Метеоры.
                     </p>
-                    <a class="country__link" href="#">Купить тур сейчас</a>
+                    <a class="country__link" href="javascript: void OpenPopup();">Купить тур сейчас</a>
                   </div>
                   <div class="country__feedbacks feedbacks">
                     <div class="feedbacks__background"></div>
@@ -176,26 +176,25 @@
                 <div class="container container--country">
                   <div class="country__wrapper">
                     <h2 class="country__title">Албания</h2>
-                    <p class="country__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p class="country__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем.
+                      Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись,
+                      можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
                     </p>
-                    <a class="country__link" href="#">Купить тур сейчас</a>
+                    <a class="country__link" href="javascript: void OpenPopup();">Купить тур сейчас</a>
                   </div>
                   <div class="country__feedbacks feedbacks">
                     <div class="feedbacks__background"></div>
                     <div class="feedbacks__wrapper">
                       <p class="feedbacks__title">Отзывы</p>
-                      <p class="feedbacks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                      <p class="feedbacks__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру,
+                        чтобы тоже смогла вкусить все красоты природы :)
                       </p>
                       <div class="feedbacks__user-wrapper">
                         <picture>
-                          <img class="feedbacks__user-photo" src="img/user_image.jpg" srcset="img/user_image@2x.jpg 2x" width="37" height="38"
+                          <img class="feedbacks__user-photo" src="img/user_image2.jpg" srcset="img/user_image2@2x.jpg 2x" width="37" height="38"
                           alt="Фото пользователя">
                         </picture>
-                        <span class="feedbacks__user-name">Константин Константинопольский</span>
+                        <span class="feedbacks__user-name">Маришка</span>
                       </div>
                     </div>
                   </div>
@@ -206,26 +205,25 @@
                 <div class="container container--country">
                   <div class="country__wrapper">
                     <h2 class="country__title">Македония</h2>
-                    <p class="country__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p class="country__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой
+                      лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен,
+                      где находится археологический памятник Кокино в длину около 100 метров.
                     </p>
-                    <a class="country__link" href="#">Купить тур сейчас</a>
+                    <a class="country__link" href="javascript: void OpenPopup();">Купить тур сейчас</a>
                   </div>
                   <div class="country__feedbacks feedbacks">
                     <div class="feedbacks__background"></div>
                     <div class="feedbacks__wrapper">
                       <p class="feedbacks__title">Отзывы</p>
-                      <p class="feedbacks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                      <p class="feedbacks__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был
+                        очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.
                       </p>
                       <div class="feedbacks__user-wrapper">
                         <picture>
-                          <img class="feedbacks__user-photo" src="img/user_image.jpg" srcset="img/user_image@2x.jpg 2x" width="37" height="38"
+                          <img class="feedbacks__user-photo" src="img/user_image3.jpg" srcset="img/user_image3@2x.jpg 2x" width="37" height="38"
                           alt="Фото пользователя">
                         </picture>
-                        <span class="feedbacks__user-name">Константин Константинопольский</span>
+                        <span class="feedbacks__user-name">Михаил Кузьмин</span>
                       </div>
                     </div>
                   </div>
@@ -236,26 +234,23 @@
                 <div class="container container--country">
                   <div class="country__wrapper">
                     <h2 class="country__title">Черногория</h2>
-                    <p class="country__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p class="country__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
+                      берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
                     </p>
-                    <a class="country__link" href="#">Купить тур сейчас</a>
+                    <a class="country__link" href="javascript: void OpenPopup();">Купить тур сейчас</a>
                   </div>
                   <div class="country__feedbacks feedbacks">
                     <div class="feedbacks__background"></div>
                     <div class="feedbacks__wrapper">
                       <p class="feedbacks__title">Отзывы</p>
-                      <p class="feedbacks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                      <p class="feedbacks__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
                       </p>
                       <div class="feedbacks__user-wrapper">
                         <picture>
                           <img class="feedbacks__user-photo" src="img/user_image.jpg" srcset="img/user_image@2x.jpg 2x" width="37" height="38"
                           alt="Фото пользователя">
                         </picture>
-                        <span class="feedbacks__user-name">Константин Константинопольский</span>
+                        <span class="feedbacks__user-name">Анастасия Мей</span>
                       </div>
                     </div>
                   </div>
@@ -266,26 +261,25 @@
                 <div class="container container--country">
                   <div class="country__wrapper">
                     <h2 class="country__title">Хорватия</h2>
-                    <p class="country__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p class="country__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти
+                      метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и
+                      сталагмитами —  формировавшимися тысячи и тысячи лет.
                     </p>
-                    <a class="country__link" href="#">Купить тур сейчас</a>
+                    <a class="country__link" href="javascript: void OpenPopup();">Купить тур сейчас</a>
                   </div>
                   <div class="country__feedbacks feedbacks">
                     <div class="feedbacks__background"></div>
                     <div class="feedbacks__wrapper">
                       <p class="feedbacks__title">Отзывы</p>
-                      <p class="feedbacks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                      <p class="feedbacks__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это
+                        формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)
                       </p>
                       <div class="feedbacks__user-wrapper">
                         <picture>
-                          <img class="feedbacks__user-photo" src="img/user_image.jpg" srcset="img/user_image@2x.jpg 2x" width="37" height="38"
+                          <img class="feedbacks__user-photo" src="img/user_image5.jpg" srcset="img/user_image5@2x.jpg 2x" width="37" height="38"
                           alt="Фото пользователя">
                         </picture>
-                        <span class="feedbacks__user-name">Константин Константинопольский</span>
+                        <span class="feedbacks__user-name">Владимир Мулицин</span>
                       </div>
                     </div>
                   </div>
@@ -316,12 +310,12 @@
                 </div>
                 <span class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</span>
                 <ul class="rate__feature-list">
-                  <li class="rate__feature-list-item">Разработанный маршрут с гидом группы</li>
+                  <li class="rate__feature-list-item rate__feature-list-item--first">Разработанный маршрут с гидом группы</li>
                   <li class="rate__feature-list-item">Перелет, трансфер и проживание в отелях</li>
                   <li class="rate__feature-list-item">Завтраки, ужины в отелях и ланчи на природе</li>
                   <li class="rate__feature-list-item">Экскурсии по удивительно красивым местам Европы</li>
                 </ul>
-                <a class="rate__feature-link" href="#">Купить тур сейчас</a>
+                <a class="rate__feature-link" href="javascript: void OpenPopup();">Купить тур сейчас</a>
               </li>
               <li class="prices__rates-item rate">
                 <div class="rate__wrapper">
@@ -336,7 +330,7 @@
                   <li class="rate__feature-list-item">Только завтраки в отелях</li>
                   <li class="rate__feature-list-item">Экскурсии по удивительно красивым местам Европы</li>
                 </ul>
-                <a class="rate__feature-link" href="#">Купить тур сейчас</a>
+                <a class="rate__feature-link" href="javascript: void OpenPopup();">Купить тур сейчас</a>
               </li>
             </ul>
           </div>
@@ -348,7 +342,7 @@
           <button class="popup__close popup__close--no-js" type="button"></button>
           <h3 class="popup__title">Купить тур</h3>
           <form class="popup__form form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="form-phone-modal"></label>
+            <label class="visually-hidden form__label-phone" for="form-phone-modal"></label>
             <input class="form__input form__input--phone" type="text" id="form-phone-modal" name="form-phone-modal" placeholder="+7 Введите 10 цифр номера" required>
             <label class="visually-hidden" for="form-email-modal"></label>
             <input class="form__input form__input--email" type="text" id="form-email-modal" name="form-email-modal" placeholder="E-mail">
@@ -362,9 +356,9 @@
           <div class="questions__wrapper">
             <h3 class="questions__title">У Вас остались вопросы?</h3>
             <span class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</span>
-            <form class="questions__form form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="form-phone"></label>
-              <input class="form__input form__input--phone form__input--questions" type="text" id="form-phone" name="form-phone" placeholder="+7 Введите 10 цифр номера" required>
+            <form class="questions__form form form--questions" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden form__label-phone" for="form-phone"></label>
+              <input class="form__input form__input--phone form__input--questions" type="text" id="form-phone" name="form-phone" placeholder="+7&ensp;Введите 10 цифр номера" required>
               <label class="visually-hidden" for="form-email"></label>
               <input class="form__input form__input--email form__input--questions" type="text" id="form-email" name="form-email" placeholder="E-mail">
               <button class="form__submit form__submit--questions" type="submit">Отправить</button>
@@ -385,53 +379,53 @@
           <div class="page-footer__wrapper-countries">
             <ul class="page-footer__list">
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Марсель</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Марсель</a>
               </li>
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Ним</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Ним</a>
               </li>
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Монпелье</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Монпелье</a>
               </li>
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Барселона</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Барселона</a>
               </li>
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Пальма</a>
-              </li>
-            </ul>
-            <ul class="page-footer__list">
-              <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Сардиния</a>
-              </li>
-              <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Палермо</a>
-              </li>
-              <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Катания</a>
-              </li>
-              <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Неаполь</a>
-              </li>
-              <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Рим</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Пальма</a>
               </li>
             </ul>
             <ul class="page-footer__list">
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Корс</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Сардиния</a>
               </li>
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Ницца</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Палермо</a>
               </li>
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Монако</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Катания</a>
               </li>
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html">Динь-ле-Бен</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Неаполь</a>
               </li>
               <li class="page-footer__list-item">
-                <a class="page-footer__list-link" href="catalog.html" target="#blank">Гренобль</a>
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Рим</a>
+              </li>
+            </ul>
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Корс</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Ницца</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Монако</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Динь-ле-Бен</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a class="page-footer__list-link" href="catalog.html" target="_blank">Гренобль</a>
               </li>
             </ul>
           </div>
@@ -439,8 +433,8 @@
         <section class="page-footer__contacts">
           <h4 class="page-footer__title page-footer__title--contacts">Наши контакты</h4>
           <div class="page-footer__wrapper-contacts">
-            <a class="page-footer__contacts-link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-            <a class="page-footer__contacts-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+            <a class="page-footer__contacts-link-email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+            <a class="page-footer__contacts-link-phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
           </div>
         </section>
         <section class="page-footer__corp-trip">

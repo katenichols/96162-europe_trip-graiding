@@ -1,5 +1,9 @@
 .places {
-  padding-top: 80px;
+  padding-top: 81px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 200px;
@@ -26,11 +30,12 @@
     text-align: left;
 
     @include font-group-small($size-55, $line-80);
+    letter-spacing: -1.25px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -30px;
+      bottom: -34px;
       left: 0;
 
       display: block;
@@ -43,7 +48,7 @@
 }
 
 .places__text {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   text-align: center;
 
   letter-spacing: -0.47px;
@@ -58,6 +63,7 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+    margin-bottom: 55px;
     margin-left: 0;
     text-align: left;
   }
@@ -80,7 +86,7 @@
     flex-wrap: wrap;
     justify-content: center;
     min-width: 616px;
-    padding-bottom: 55px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {

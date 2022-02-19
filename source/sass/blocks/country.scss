@@ -11,7 +11,7 @@
     display: block;
     width: 470px;
     padding-right: 0;
-    padding-top: 15px;
+    padding-top: 9px;
     padding-left: 0;
   }
 }
@@ -24,21 +24,24 @@
   color: $dark-color;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+
     @include font-group-small($size-30, $line-45);
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
 
-    margin-bottom: 53px;
+    margin-bottom: 49px;
     text-align: left;
 
     @include font-group-small($size-55, $line-90);
+    letter-spacing: -1.25px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -20px;
+      bottom: -17px;
       left: 0;
 
       display: block;
@@ -52,14 +55,14 @@
 
 .country__text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   text-align: center;
 
   letter-spacing: -0.47px;
 
   @media (min-width: $desktop-width) {
     width: 370px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     text-align: left;
   }
 }
@@ -70,8 +73,8 @@
   margin-right: auto;
   margin-bottom: 50px;
   margin-left: auto;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 21px;
+  padding-bottom: 17px;
   text-align: center;
 
   @include font-group($size-10, $line-12);
@@ -95,7 +98,7 @@
     margin-bottom: 0;
     margin-left: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
 
     @include font-group-bold($size-12, $line-15);
   }

@@ -1,4 +1,16 @@
+.form--questions {
+  width: 288px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 559px;
+  }
+}
+
 .form__input {
+  position: relative;
+
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -12,6 +24,10 @@
 
   &--phone {
     padding-left: 26px;
+
+    background-image: url("../../img/icons/required.svg");
+    background-repeat: no-repeat;
+    background-position: 14px 9px;
   }
 
   &--invalid {
@@ -28,8 +44,8 @@
 .form__submit {
   display: block;
   width: 100%;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 21px;
+  padding-bottom: 17px;
   text-align: center;
 
   @include font-group-medium($size-10, $line-12);
@@ -43,6 +59,13 @@
     cursor: pointer;
   }
 
+  &:active {
+    padding-top: 21px;
+    padding-bottom: 17px;
+
+    background-color: $accent-color-hover;
+  }
+
   @media (min-width: $tablet-width) {
     width: 174px;
     margin-right: auto;
@@ -51,5 +74,10 @@
     padding-bottom: 17px;
 
     @include font-group-bold($size-12, $line-15);
+
+    &:active {
+      padding-top: 18px;
+      padding-bottom: 17px;
+    }
   }
 }

@@ -8,13 +8,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 160px;
+    padding-top: 158px;
     padding-bottom: 74px;
   }
 }
 
 .page-footer__next-countries {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
   border-bottom: 1px solid $footer-border-color;
 
@@ -32,8 +32,8 @@
 }
 
 .page-footer__contacts {
-  padding-top: 30px;
-  padding-bottom: 29px;
+  padding-top: 29px;
+  padding-bottom: 22px;
 
   border-bottom: 1px solid $footer-border-color;
 
@@ -60,6 +60,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,14 +74,15 @@
 
 .page-footer__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
   text-align: center;
 
   @include font-group-semibold($size-18, $line-32);
   color: $ultra-dark-color;
 
   &--contacts {
-    margin-bottom: 25px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $tablet-width) {
@@ -112,20 +114,29 @@
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
     justify-content: left;
+
+    border-right: 1px solid $footer-border-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 387px;
+
+    border-right: none;
   }
 }
 
 .page-footer__list {
+  width: 144px;
   margin-top: 0;
-  margin-right: 20px;
   margin-bottom: 0;
   padding-left: 0;
 
   &:first-of-type {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $tablet-width) {
+    width: 125px;
     margin-right: 0;
     text-align: left;
 
@@ -133,9 +144,109 @@
       margin-bottom: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &:first-of-type {
+      width: 131px;
+    }
+
+    &:nth-of-type(2) {
+      width: 121px;
+    }
+
+    &:last-of-type {
+      width: 132px;
+    }
+  }
+}
+
+.page-footer__list-item {
+  margin-bottom: 9px;
+
+  line-height: 17px;
 }
 
 .page-footer__list-link {
   @include font-group($size-14, $line-17);
   color: $ultra-dark-color-halffade;
+
+  &:hover {
+    color: $basic-accent-color;
+  }
+}
+
+.page-footer__contacts-link-email {
+  position: relative;
+
+  display: block;
+  width: 258px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  padding-left: 41px;
+
+  @include font-group($size-14, $line-17);
+  color: $basic-accent-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    display: block;
+    width: 26px;
+    height: 20px;
+
+    background-image: url("../../img/icons/icon_mail-footer.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    margin-left: 0;
+  }
+}
+
+.page-footer__contacts-link-phone {
+  position: relative;
+
+  display: block;
+  width: 209px;
+  margin-right: 40px;
+  margin-left: 39px;
+  padding-left: 41px;
+
+  @include font-group($size-16, $line-32);
+  color: $basic-accent-color;
+  text-decoration: underline;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../../img/icons/icon_phone-footer.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.page-footer__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+
+  @include font-group($size-14, $line-24);
+  color: $ultra-dark-color-halffade;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }

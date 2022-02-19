@@ -13,9 +13,17 @@
   }
 
   &--open {
-    position: absolute;
+    position: fixed;
+    top: calc(50% - 260px);
+    left: calc(50% - 160px);
+    z-index: 500;
 
     display: block;
+
+    @media (min-width: $tablet-width) {
+      top: calc(50% - 222px);
+      left: calc(50% - 360px);
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -68,6 +76,10 @@
   background-image: url("../../img/icons/icon_nav-button_close.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &--no-js {
     display: none;
