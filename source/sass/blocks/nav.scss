@@ -91,8 +91,24 @@
     background-color: $basic-white;
   }
 
+  &--no-js {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--no-js {
+      display: flex;
+      width: auto;
+      margin-right: 21px;
+      padding-left: 0;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+    width: auto;
     margin: 0;
     margin-right: 111px;
     padding-left: 0;
@@ -102,6 +118,25 @@
 .nav__list-item {
   &:first-child {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav__list--no-js .nav__list-item {
+  &:first-child {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:first-child {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -129,7 +164,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 23px;
+    top: 26px;
     right: 25px;
     z-index: 200;
 
@@ -166,14 +201,32 @@
   }
 }
 
+.nav__list--no-js .nav__list-link {
+  &::after {
+    right: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-group-medium($size-14, $line-17);
+
+    background-color: $basic-white;
+
+    &::after {
+      top: 20px;
+      right: 0;
+    }
+  }
+}
+
 .nav__phone-link {
   display: none;
 
   @media (min-width: $desktop-width) {
     position: relative;
 
-    display: flex;
-    padding-right: 3px;
+    display: block;
+    width: 194px;
+    margin-right: -3px;
 
     color: $ultra-dark-color;
     text-decoration: underline;

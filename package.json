@@ -2,6 +2,10 @@
   "name": "europe_trip",
   "private": true,
   "description": "Личный проект «Путешествие по Европе» от HTML Academy",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:katenichols/96162-europe_trip-graiding.git"
+  },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",

@@ -19,11 +19,6 @@
     z-index: 500;
 
     display: block;
-
-    @media (min-width: $tablet-width) {
-      top: calc(50% - 222px);
-      left: calc(50% - 360px);
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -36,6 +31,21 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/popup-background@2x.jpg");
       background-size: contain;
+    }
+
+    &--open {
+      top: calc(50% - 222px);
+      left: calc(50% - 360px);
+    }
+
+    &--no-js {
+      margin-bottom: 110px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--no-js {
+      margin-bottom: 140px;
     }
   }
 }

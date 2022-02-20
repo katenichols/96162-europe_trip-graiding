@@ -86,48 +86,6 @@
   }
 }
 
-.form__input--questions {
-  display: inline-block;
-  vertical-align: middle;
-  width: 288px;
-
-  &:first-of-type {
-    margin-right: 19px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 269px;
-
-    &:first-of-type {
-      margin-right: 16px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
-  }
-}
-
-.form__submit--questions {
-  @media (min-width: $tablet-width) {
-    width: 250px;
-    padding-top: 20px;
-    padding-bottom: 18px;
-
-    @include font-group-medium($size-10, $line-12);
-
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 176px;
-    padding-top: 18px;
-    padding-bottom: 17px;
-
-    @include font-group-bold($size-12, $line-15);
-
-  }
-}
-
 .questions__feedback {
   position: relative;
 

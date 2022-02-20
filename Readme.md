@@ -8,4 +8,4 @@
 
 Репозиторий создан для грейдирования на профессии «[Фронтент-разработчик](https://up.htmlacademy.ru/profession/frontender/11/production/grading)» от [HTML Academy](https://htmlacademy.ru).
 
-Работа над проектом заняла 35 часов.
+Работа над проектом заняла 39 часов.

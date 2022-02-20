@@ -28,6 +28,10 @@
     padding-right: 0;
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media (min-width: $tablet-width) {
     padding-right: 96px;
   }
@@ -46,4 +50,8 @@
   &--active {
     color: $basic-accent-color;
   }
+}
+
+.countries__nav-item:hover .countries__nav-text {
+  color: $accent-color-hover;
 }

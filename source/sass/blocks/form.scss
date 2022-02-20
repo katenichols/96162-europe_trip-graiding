@@ -33,6 +33,32 @@
   &--invalid {
     border-color: $basic-accent-color;
   }
+
+  &--questions {
+    display: inline-block;
+    vertical-align: middle;
+    width: 288px;
+
+    &:first-of-type {
+      margin-right: 19px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--questions {
+      width: 269px;
+
+      &:first-of-type {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--questions {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .form__input,
@@ -64,6 +90,7 @@
     padding-bottom: 17px;
 
     background-color: $accent-color-hover;
+
   }
 
   @media (min-width: $tablet-width) {
@@ -76,6 +103,34 @@
     @include font-group-bold($size-12, $line-15);
 
     &:active {
+      padding-top: 18px;
+      padding-bottom: 17px;
+    }
+
+    &--questions {
+      width: 250px;
+      padding-top: 20px;
+      padding-bottom: 18px;
+
+      @include font-group-medium($size-10, $line-12);
+    }
+
+    &--questions:active {
+      padding-top: 20px;
+      padding-bottom: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--questions {
+      width: 176px;
+      padding-top: 18px;
+      padding-bottom: 17px;
+
+      @include font-group-bold($size-12, $line-15);
+    }
+
+    &--questions:active {
       padding-top: 18px;
       padding-bottom: 17px;
     }
